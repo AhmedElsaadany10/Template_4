@@ -1,0 +1,103 @@
+#Reviews{
+    width: 100%;
+    position: relative;
+}
+
+.ReviewContainer{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.BoxReview{
+    width: 500px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0.5rem 0.4rem 1rem rgb(243, 239, 241);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+.BoxReview:hover{
+    transition: 0.5s all ease-in-out;
+    transform: translateY(-10%);
+}
+.BoxReview .oneline{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.BoxReview .oneline .CustomerImg{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    width: 80%;
+    border-bottom: 2px solid rgb(217,77,95);
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+}
+.BoxReview .oneline .CustomerImg img{
+    width: 80px;
+    height: 80px;
+    border:1px solid silver;
+    border-radius: 50%;
+}
+.BoxReview .oneline .CustomerImg h2{
+    margin-left: 0.5rem;
+}
+.BoxReview .oneline .CustomerImg span{
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.BoxReview .oneline .Stars{
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+.BoxReview .oneline .Stars i{
+    color:rgb(217,77,95);
+    font-size: 1.1rem;
+}
+.BoxReview p{
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 100%;
+    color: rgb(54,53,55,1);
+}
+.ClientSays{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    flex-direction: column;
+}
+.ClientSays span{
+    font-size: 1.3rem;
+    opacity: 0.8;
+
+}
+.ClientSays h2{
+    font-size: 2rem;
+}
+.ClientSays h2 .inner{
+    font-size:2.3rem;
+    opacity: 1;
+    border:none ;
+    border-bottom: 3px solid rgb(217,77,95);
+}
+@media screen and (max-width:1048px) {
+    .BoxReview{
+        width: 450px;
+    }
+} 
+@media screen and (max-width:947px) {
+    .BoxReview{
+        width: 400px;
+    }
+}  

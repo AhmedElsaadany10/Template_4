@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/Product.css">
+    <link rel="stylesheet" href="css/ContactFormcss.css">
+    <link rel="stylesheet" href="css/Review.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Udacit-profissional-track</title>
+</head>
+<body>
+   
+  
+    <!--Loader-->
+    <div class="loader-container">
+        <div class="LoadText" id="LoadText"></div>
+        <div class="dots "></div>
+        <div class="dots "></div>
+        <div class="dots "></div>
+    </div>
+    <!--End Loader-->
+       <!--Header Section-->
+       <header>
+        <a href="index.html" class="Logo"><i class="fas fa-dolly"></i>Udacity-Market<span id="Dt">.</span></a>
+        <nav>
+            <a href="#Main" class="active Main">Home</a>
+            <a href="#Discount" class="Discount">Discount</a>
+            <a href="#Products" class="Products">Products</a>
+            <a href="#Contact" class="Contact">Contact</a>
+            <a href="#about" class="about">About</a>
+            <a href="#Reviews" class="Reviews">Reviews</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-bars" id="bar" onclick="toggle()"></i>
+            <i class="fa fa-search" id="srch"></i>
+            <i class="fa fa-heart"></i>
+
+        </div>
+    </header>
+    <!--End OF Header Section-->
+
+     <!--Resposive Nabar-->
+    <div class="navbar2 hidden" id="nav2" >
+    <a href="#Main" class="">Home</a>
+    <a href="#Discount" >Discount</a>
+    <a href="#Products">Products</a>
+    <a href="#Contact">Contact</a>
+    <a href="#Reviews">Reviews</a>
+    <a href="#about">About</a>
+    </div>
+    <!--End Of Resposive Nabar-->
+
+    <!--Main Page-->
+    <section class="MainPage" id="Main" onmouseenter="">
+        <div class="paddingTop"></div>
+        <div class="MainPageContainer">
+            <h2>Welcome In <i class="fas fa-dolly"></i>Udacity-Market<span id="Dt">.</span></h2>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laborum voluptatibus nostrum quae voluptas totam.
+             </p>
+             <div class="B">
+                <button class="B1" onclick="Discount()">Sale</button>
+                <button class="B2" onclick="GoToContact()">Let's Talk</button>    
+             </div>
+            
+             <div class="HomeSocial ">
+                    <i class="fab fa-facebook-f" ></i>
+                     <i class="fab fa-twitter" ></i>
+                     <i class="fab fa-youtube" ></i>
+                    <i class="fab fa-instagram" ></i>
+
+            </div>
+            <div class="arrow">
+                <i class="fas fa-arrow-down" onclick="GoToProducts()"></i>
+            </div>
+    
+             </div>
+        
+        
+        <div class="inputsearch hidden ">
+            <div class="X">
+                <i class="fas fa-times"></i>
+            </div>
+            <input type="search" name="search" placeholder="Search Here ...." id="search">
+        </div>
+    </section>
+    
+    <!--End Of Main Page Section-->
+
+
+    <!--Discount-->
+    <section class="SaleCards" id="Discount"  onmouseenter=""> 
+        <div class="paddingTop"></div>
+       <div class="TopofDiscountCard">
+           <h2> <span>Sale</span> Up To 50%</h2>
+           <p>Available Until 1-10-2021</p>
+       </div>
+       <div class="ContainerOfProCard">
+        <div class="ProCard">
+            <div class="ProductImage">
+                <img src="images/pngfind.com-cartoon-headphones-png-1925971.png"  style="width:70%;">
+            </div>
+                 <div class="InfoProduct">
+                        <div class="ProductName">
+                            <h2>HeadPhone</h2>
+                            <span>Premium HeadPhone</span>
+                        </div>
+                        <div class="price">
+                            <span>30$</span>
+                            <span class="Throwline"> 
+                                50$
+                            </span> 
+                        </div>
+                        <div class="ProductButtons">
+                            <button>Buy Now</button>
+                            <button  name="HeadPhoneSale">Add To Cart</button>
+                        </div>
+                 </div>
+            </div>
+            <div class="ProCard">
+                <div class="ProductImage">
+                    <img src="images/pngfind.com-keyboard-mouse-png-5066218.png" >
+                </div>
+                     <div class="InfoProduct">
+                            <div class="ProductName">
+                                <h2>Gaming-Package</h2>
+                                <span>Gaming</span>
+                            </div>
+                            <div class="price">
+                                <span>30$</span>
+                                <span class="Throwline"> 
+                                    50$
+                                </span>
+                            </div>
+                            <div class="ProductButtons">
+                                <button>Buy Now</button>
+                                <button  name="Gaming">Add To Cart</button>
+                            </div>
+                     </div>
+                </div>
+                <div class="ProCard">
+                    <div class="ProductImage">
+                        <img src="images/pngfind.com-gaming-mouse-png-2219620.png">
+                    </div>
+                         <div class="InfoProduct">
+                                <div class="ProductName">
+                                    <h2>Mouse</h2>
+                                    <span>Mouse Gaming</span>
+                                </div>
+                                <div class="price">
+                                    <span>20$</span>
+                                    <span class="Throwline"> 
+                                        25$
+                                    </span>
+                                </div>
+                                <div class="ProductButtons">
+                                    <button>Buy Now</button>
+                                    <button  name="MouseSale">Add To Cart</button>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="ProCard">
+                        <div class="ProductImage">
+                            <img src="images/pngfind.com-laptop-png-1036388.png">
+                        </div>
+                             <div class="InfoProduct">
+                                    <div class="ProductName">
+                                        <h2>Laptop</h2>
+                                        <span>Toshiba Laptop</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>300$</span>
+                                        <span class="Throwline"> 
+                                            500$
+                                        </span>
+                                    </div>
+                                    <div class="ProductButtons">
+                                        <button>Buy Now</button>
+                                        <button  name="LaptopSale">Add To Cart</button>
+                                    </div>
+                             </div>
+                        </div>
+        </div>
+    </section>
+    <!--End Of Discount Section-->
+
+
+    <!--Products -->
+    <section class="ProductCards" id="Products"  onmouseenter=""> 
+        <div class="paddingTop"></div>
+        <div class="TopofDiscountCard">
+            <h2> <span>Products</span> Section</h2>
+            <p>We Hope You Find Your Items :)</p>
+        </div>
+        <div class="ContainerOfProCard">
+             <div class="ProCard">
+            <div class="ProductImage">
+                <img src="images/32-headphones-png-image.png">
+            </div>
+                 <div class="InfoProduct">
+                        <div class="ProductName">
+                            <h2>HeadPhone</h2>
+                            <span>Premium HeadPhone</span>
+                        </div>
+                        <div class="price">
+                            <span>30$</span>
+                            <span> 
+                                <i class="fas fa-star"> </i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                               </span>  
+                        </div>
+                        <div class="ProductButtons">
+                            <button>Buy Now</button>
+                            <button  name="HeadPhone">Add To Cart</button>
+                        </div>
+                 </div>
+            </div>
+
+            <div class="ProCard">
+                <div class="ProductImage">
+                    <img src="images/58720-id-face-apple-iphone-4s-png-image-high-quality_400x400.png">
+                </div>
+                     <div class="InfoProduct">
+                            <div class="ProductName">
+                                <h2>Phone</h2>
+                                <span>IPhone 5</span>
+                            </div>
+                            <div class="price">
+                                <span>100$</span>
+                                <span> 
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                   </span>  
+                            </div>
+                            <div class="ProductButtons">
+                                <button>Buy Now</button>
+                                <button  name="IPhone5">Add To Cart</button>
+                            </div>
+                     </div>
+            </div>
+            <div class="ProCard">
+                    <div class="ProductImage">
+                        <img src="images/pngfind.com-ipad-pro-png-1453788.png">
+                    </div>
+                         <div class="InfoProduct">
+                                <div class="ProductName">
+                                    <h2>IPad</h2>
+                                    <span>IPad Pro</span>
+                                </div>
+                                <div class="price">
+                                    <span>200$</span>
+                                    <span> 
+                                        <i class="fas fa-star"> </i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                       </span>  
+                                </div>
+                                <div class="ProductButtons">
+                                    <button>Buy Now</button>
+                                    <button  name="IPad">Add To Cart</button>
+                                </div>
+                         </div>
+            </div>
+            <div class="ProCard">
+                        <div class="ProductImage">
+                            <img src="images/pngfind.com-laptop-png-1233475 (1).png" id="la">
+                        </div>
+                             <div class="InfoProduct">
+                                    <div class="ProductName">
+                                        <h2>Laptop</h2>
+                                        <span>Lenovo Laptop</span>
+                                    </div>
+                                    <div class="price">
+                                        <span>300$</span>
+                                        <span> 
+                                         <i class="fas fa-star"> </i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+
+                                        <i class="fas fa-star-half-alt"></i>
+                                        </span>
+                                    </div>
+                                    <div class="ProductButtons">
+                                        <button>Buy Now</button>
+                                        <button  name="Laptop">Add To Cart</button>
+                                    </div>
+                             </div>
+            </div>
+            <div class="ProCard">
+                            <div class="ProductImage">
+                                <img src="images/pngfind.com-razer-logo-png-3199371.png">
+                            </div>
+                                 <div class="InfoProduct">
+                                        <div class="ProductName">
+                                            <h2>Keyboard</h2>
+                                            <span>Keyboard Gaming</span>
+                                        </div>
+                                        <div class="price">
+                                            <span>10$</span>
+                                            <span> 
+                                                <i class="fas fa-star"> </i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                               </span>  
+                                        </div>
+                                        <div class="ProductButtons">
+                                            <button>Buy Now</button>
+                                            <button  name="Keyboard">Add To Cart</button>
+                                        </div>
+                                 </div>
+            </div>
+            <div class="ProCard">
+                                <div class="ProductImage">
+                                    <img src="images/pngfind.com-gaming-mouse-png-2219031.png">
+                                </div>
+                                     <div class="InfoProduct">
+                                            <div class="ProductName">
+                                                <h2>Mouse</h2>
+                                                <span>Mouse Gaming</span>
+                                            </div>
+                                            <div class="price">
+                                                <span>5$</span>
+                                                <span> 
+                                                    <i class="fas fa-star"> </i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                   </span>  
+                                            </div>
+                                            <div class="ProductButtons">
+                                                <button>Buy Now</button>
+                                                <button  name="Mouse Gaming">Add To Cart</button>
+                                            </div>
+                                     </div>
+            </div>
+            <div class="ProCard">
+                                    <div class="ProductImage">
+                                        <img src="images/pngfind.com-xbox-controller-png-354335.png">
+                                    </div>
+                                         <div class="InfoProduct">
+                                                <div class="ProductName">
+                                                    <h2>JoyStick</h2>
+                                                    <span>XBox JoyStick</span>
+                                                </div>
+                                                <div class="price">
+                                                    <span>15$</span>
+                                                    <span> 
+                                                        <i class="fas fa-star"> </i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                       </span>  
+                                                </div>
+                                                <div class="ProductButtons">
+                                                    <button>Buy Now</button>
+                                                    <button name="JoyStick">Add To Cart</button>
+                                                </div>
+                                         </div>
+            </div>
+            <div class="ProCard">
+                                        <div class="ProductImage">
+                                            <img src="images/pngfind.com-avengers-png-2982397.png   ">
+                                        </div>
+                                             <div class="InfoProduct">
+                                                    <div class="ProductName">
+                                                        <h2>Mobile</h2>
+                                                        <span>OPPO Mobile</span>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>15$</span>
+                                                        <span> 
+                                                            <i class="fas fa-star"> </i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                           </span>  
+                                                    </div>
+                                                    <div class="ProductButtons">
+                                                        <button>Buy Now</button>
+                                                        <button name="OPPO Mobile">Add To Cart</button>
+                                                    </div>
+                                             </div>
+            </div>
+        </div>
+                        
+    </section>
+    <!--End Of Products Section-->
+    <!--ContactUs-->
+    <div class="paddingTop"></div>
+    <section id="Contact">
+
+        <div class="ContactSocialIcon">
+            <i class="fab fa-facebook-f" ></i>
+            <i class="fab fa-twitter" ></i>
+            <i class="fab fa-instagram" ></i>
+            <i class="fab fa-telegram-plane"></i>
+            <i class="fab fa-behance"></i>
+        </div>
+
+        <div class="Contact-form">
+            <div class="ContactHeader">
+                <h2><span>Get</span> In Touch </h2>
+                <p>Call or Mail Us For Any Support. </p>
+           </div>
+           <div class="ContactInput">
+                <input type="text" placeholder="Enter Full Name ">
+                <input type="email" placeholder="Type Your Email Here">
+                <textarea placeholder="Your Message . . . ." ></textarea>
+
+               <button>Send</button>
+           </div>
+       </div>
+       <div class="Map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.0989120863223!2d31.26489138528666!3d30.062699124665837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f7dfdb3ae8b%3A0x5b18e981cd6413f3!2z2YXZitiv2KfZhiDYp9mE2LjYp9mH2LHYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1630462831511!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+     
+     </section>
+    <!--End Of ContactUs Section-->
+     <!--AboutSection-->
+     <section id="about">
+        <div class="paddingTop"></div>
+        <div class="HeadOfAbout">
+            <h2><span>About</span> Us</h2>
+        </div>
+
+        <div class="aboutContainer">
+        <div class="Left">
+            <img src="images/Social media.gif">
+        </div>
+        <div class="aboutheader">
+            <h2><span>Why </span>To Choose Us ?</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quo aliquam,
+                 expedita ipsa odio sapiente autem vero dolorem perferendis, iure eaque quam! Totam nam,
+                  magnam sed incidunt beatae corporis aperiam.</p>
+            <div class="AboutButtons">
+                <button><i class="fas fa-truck"></i> Fast Delivery</button>
+                <button><i class="fas fa-dollar-sign"></i> Easy Payment </button>
+                <button><i class="fas fa-headset"></i> 24/7 Service </button>
+            </div>
+            <div class="AboutSocial ">
+                    <i class="fab fa-facebook-f" ></i>
+                    <i class="fab fa-twitter" ></i>
+                    <i class="fab fa-youtube" ></i>
+                    <i class="fab fa-instagram" ></i>
+            </div>    
+            
+        </div>
+      
+        </div>
+    </section>
+    <!--Reviews-->
+    <section class="" id="Reviews"  onmouseenter=""> 
+        <div class="paddingTop"></div>
+        <div class="ClientSays">
+            <span>Comments</span>
+            <h2> <span class="inner">They</span> Said About Us</h2>
+        </div>
+        <div class="ReviewContainer">
+            <div class="BoxReview">
+                <div class="oneline">
+                    <div class="CustomerImg">
+                        <img src="images/Signin.gif">
+                        <div class="InfoToUser">
+                            <h2>Ahmed Elsaadany</h2>
+                            <span>@ahmed</span>
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="Stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+               
+               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Dolore quo dolorem unde magni at maiores nisi ab eum facere
+                      eius cumque illo eligendi reiciendis,
+                     iusto quis libero aut explicabo. Officiis.
+                </p>
+            </div>
+            <div class="BoxReview">
+                <div class="oneline">
+                    <div class="CustomerImg">
+                        <img src="images/Mobile Marketing.gif">
+                        <div class="InfoToUser">
+                            <h2>Mohamed Mahmoud</h2>
+                            <span>@Mohamed</span>
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="Stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+               
+               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Dolore quo dolorem unde magni at maiores nisi ab eum facere
+                      eius cumque illo eligendi reiciendis,
+                     iusto quis libero aut explicabo. Officiis.
+                </p>
+            </div>
+            <div class="BoxReview">
+                <div class="oneline">
+                    <div class="CustomerImg">
+                        <img src="images/Dropshipping model.gif">
+                        <div class="InfoToUser">
+                            <h2>Mahmoud Hussein</h2>
+                            <span>@mahmoud</span>
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="Stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+               
+               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Dolore quo dolorem unde magni at maiores nisi ab eum facere
+                      eius cumque illo eligendi reiciendis,
+                     iusto quis libero aut explicabo. Officiis.
+                </p>
+            </div>
+    
+            <div class="BoxReview">
+                <div class="oneline">
+                    <div class="CustomerImg">
+                        <img src="images/Programming.gif">
+                        <div class="InfoToUser">
+                            <h2>Ahmed Adel</h2>
+                            <span>@adel</span>
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="Stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+               
+               
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Dolore quo dolorem unde magni at maiores nisi ab eum facere
+                      eius cumque illo eligendi reiciendis,
+                     iusto quis libero aut explicabo. Officiis.
+                </p>
+            </div>
+        </div>    
+    </section>
+    <!--End Of Reviews Section-->
+
+    <!--Footer Section-->
+    <footer >
+    <div class="foot">
+        <div class="aboutSection ">
+            <div class="About">
+                <h2><span>About</span>   Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Earum maiores quae expedita veritatis, hic vitae. Ducimus,
+                      vitae inventore exercitationem sit placeat tempora aspernatur enim quidem.
+                    
+                </p>
+            </div>
+            
+               
+        </div>
+
+        <div class="dynamic ">
+                <h2><span>Contact</span> Us</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                            <span> Elnozha ,Cairo ,Egypt.</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>01245678912</span>
+                        <span>01234567890</span>
+                    </li>
+                    <li>
+                        
+                        <i class="far fa-envelope"></i>
+                        <span>ahmedelsaadany565@gmail.com</span>
+                    </li>
+                </ul>
+        </div>
+        <div class="dynamic2 ">
+
+            <h2><span>Social</span> Media</h2>
+            <span>Contact With Us Via</span>
+            <div class="social">
+            <div class="socialDetail">
+                <i class="fab fa-facebook-f" id="facebook"></i>
+                <span>Facebook</span>
+            </div>
+    
+            <div class="socialDetail">
+                 <i class="fab fa-twitter" id="twitter"></i>
+                 <span>Twitter</span>
+             </div>
+    
+             <div class="socialDetail">
+                 <i class="fab fa-youtube" id="youtube"></i>
+                 <span>YouTube</span>
+             </div>
+             
+             <div class="socialDetail">
+                <i class="fab fa-instagram" id="insta"></i>
+                 <span>Instagram</span>
+             </div>
+            </div>
+
+         </div>
+    </div>
+    <div class="CopyRihts">
+        <p>CopyRight &copy 2021 WebSite Developing. All Rights Reserved To Elsaadany.</p>
+    </div>
+    </footer>
+    <!-- End Of Footer Section-->
+  
+    <script src="js/main.js"></script>
+</body>
+
+</html>

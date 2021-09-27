@@ -1,0 +1,74 @@
+#about{
+position: relative;
+width: 100%;
+}
+.aboutContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutheader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.AboutButtons button{
+    background-color: transparent;
+    border:1px solid rgb(217,77,95) ;
+    color: rgb(217,77,95) ;
+    cursor: pointer;
+    padding:1rem;
+    margin-right: 0.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.AboutButtons i{
+    color:rgb(217,77,95) ;
+}
+.HeadOfAbout{
+    text-align: center;
+}
+.HeadOfAbout h2 span{
+    border-bottom:4px solid rgb(217,77,95) ;
+    font-size: 2rem;
+}
+.HeadOfAbout{
+    width: 100%;
+    padding:1rem;
+}
+.aboutheader{
+    width: 50%;
+}
+.aboutheader h2{
+    padding:1rem 0;
+}
+.aboutheader h2 span{
+    border-bottom:4px solid rgb(217,77,95) ;
+    font-size: 2rem;
+}
+.aboutheader p{
+    font-size:1.1rem;
+    padding: 0.8rem 0;
+    text-align: left;
+}
+.AboutSocial{
+    padding: 1rem;
+}
+.AboutSocial i{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: rgba(0,0,0,0.8);
+}
+.AboutSocial i:hover{
+    transform: scale(1.2);
+    transition: 0.5;
+}
+.Left{
+    width: 40%;
+}
+.Left img{
+    width: 100%;
+}

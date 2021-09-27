@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="formcontent" id="f1" >
+        <form action="index.html" method="GET" class="" id="form1">
+            <h2>Signin</h2>
+            <div class="firstform">
+                <div class="data">
+                        <input type="text" required name="text" id="text">
+                        <label for="text">Name</label>
+                </div>
+            </div>          
+            <div class="firstform">
+                <div class="data">
+                        <input type="password" required name="password" id="password" >
+                        <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="Button">
+                <input type="submit" value="Signin" id="submit1">
+            </div>
+            <div class="foot">
+                <span>Or Login with</span>
+                <div class="iconslogin">    
+                <i class="fab fa-facebook-f" ></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="Button">
+                <span>New Member?</span>
+                <input type="button" value="SignUp" id="signup">
+            </div> 
+       </form>
+
+        <form action=" " class="hidden" method="GET"  id="form2">
+        <h2>Signup</h2>
+        <div class="firstform">
+            <div class="data">
+                    <input type="text" required name="text2" id="text2">
+                    <label for="text2">Name</label>
+            </div>
+        </div>     
+        <div class="firstform">
+            <div class="data">
+                    <input type="email" required name="email" id="email">
+                    <label for="email">email</label>
+            </div>
+        </div>     
+        <div class="firstform">
+            <div class="data">
+                    <input type="password" required name="password2" id="password2">
+                    <label for="password2">Password</label>
+            </div>
+        </div>
+      
+        <div class="Button">
+            <input type="submit" value="SignUp" >
+        </div>
+        
+        <div class="Button">
+            <span>aleardy Member?</span>
+            <input type="button" value="Signin" id="signin">
+        </div>
+        </form>
+    </div>
+   <script src="js/signin.js"></script>
+</body>
+</html>
